@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Noto Sans TC", sans-serif;
+}
+ul.description-body {
+  list-style-type: none;
+}
+ul.description-body li {
+  margin: 10px 0;
+  position: relative;
+}
+ul.description-body li h1 {
+  font-size: 20px;
+  font-weight: 800;
+  word-break: keep-all;
+}
+ul.description-body li div.priceBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ul.description-body div.priceBox p.sellPrice {
+  font-weight: 800;
+}
+ul.description-body div.priceBox p.originPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+ul.description-body div.reviews {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: gainsboro; /*背景星星顏色*/
+  overflow: hidden;
+  font-size: 18px;
+  text-shadow: 0px 1px 0 gray;
+}
+ul.description-body span.full-star {
+  width: 100%; /*調整寬度可變更星等*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #d56a16; /*星星的顏色*/
+}
+li.author,
+span.score,
+span.totalComment,
+span.time {
+  margin: 0;
+  color: gray;
+  font-size: 18px;
+}
+
+ul.description-body li h5 span.badge {
+  background-color: rgb(105, 179, 105);
+}
