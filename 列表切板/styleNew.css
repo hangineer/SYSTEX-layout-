@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  font-family: Roboto, "Noto Sans TC", sans-serif;
+}
+/* 外部容器 */
+div.description-body {
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+}
+div.class-container div.left img.course-image {
+  max-width: 40%;
+  min-width: 250px;
+}
+/* 課程標題 */
+div.description-body p.class-title {
+  font-size: 25px;
+  font-weight: 800;
+  word-break: keep-all;
+}
+/* 課程敘述 */
+div.description-body p.description {
+  font-weight: bold;
+  font-size: 14px;
+}
+/* 價格資訊 */
+div.description-body div.priceBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  text-align: center;
+}
+div.description-body div.priceBox p.sellPrice {
+  font-weight: 800;
+}
+div.description-body div.priceBox p.originPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+/* 星等評論 */
+div.description-body div.reviews {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: gainsboro; /*背景星星顏色*/
+  overflow: hidden;
+  font-size: 18px;
+  text-shadow: 0px 1px 0 gray;
+}
+div.description-body span.full-star {
+  width: 100%; /*調整寬度可變更星等*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #d56a16; /*星星的顏色*/
+}
+/* 字體顏色 */
+p.author,
+span.score,
+span.totalComment,
+p.time {
+  margin: 0;
+  color: gray;
+  font-size: 18px;
+}
+/* 課程二的徽章 */
+div.description-body span.badge {
+  display: inline-block;
+  background-color: rgb(105, 179, 105);
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+  div.description-body p.class-title {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+    word-wrap: break-word;
+    width: 80%;
+  }
+  div.description-body div.priceBox {
+    margin-top: 10px;
+    width: 20%;
+  }
+  /* div.class-container div.left img.course-image {
+    width: 50%;
+  } */
+}

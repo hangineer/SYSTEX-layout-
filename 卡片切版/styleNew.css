@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* 外部容器 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* 卡片主體 */
+.card {
+  width: 200px;
+  position: relative;
+  margin: 50px 40px;
+  border-bottom: 7px solid rgb(240, 180, 0);
+}
+.card img {
+  max-width: 100%;
+  min-width: 250px;
+}
+/* 講師頭像 */
+.circle {
+  background: no-repeat center / cover aqua;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  z-index: 100;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  position: relative;
+  margin: 30px 0 5px 0;
+}
+.card-text .restDay {
+  position: absolute;
+  right: 0;
+}
+.card-text .price {
+  color: rgb(240, 180, 0);
+}
+.progressBar {
+  border-radius: 100px;
+  width: 100%;
+  height: inherit;
+  background-color: gainsboro; /*進度調的背景色*/
+}
+.currentProgress {
+  height: 8px;
+  width: 80%;
+  background-color: rgb(240, 180, 0);
+  margin: 0 0 10px 0;
+  border-radius: 50px;
+}
+.donationText {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+/* @media (max-width: 768px) {
+  .card {
+    flex-basis: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .card {
+    flex-basis: 60%;
+  }
+} */
